@@ -66,7 +66,7 @@ module Receipts
     end
 
     def charge_details
-      move_down 6
+      #move_down 6
 
       borders = line_items.length - 2
 
