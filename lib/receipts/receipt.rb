@@ -70,7 +70,7 @@ module Receipts
 
       borders = line_items.length - 2
 
-      table(line_items, width: bounds.width) do
+      table(line_items, width: bounds.width, cell_style: {border_color: "FFFFFF", inline_format: true}) do
         cells.padding = 0
         cells.borders = []
         row(0..borders).borders = [:bottom]
