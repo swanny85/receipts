@@ -66,12 +66,12 @@ module Receipts
     end
 
     def charge_details
-      move_down 14
+      move_down 6
 
       borders = line_items.length - 2
 
-      table(line_items, width: bounds.width, cell_style: {border_color: "FA9A8F", inline_format: true}) do
-        cells.padding = 6
+      table(line_items, width: bounds.width) do
+        cells.padding = 0
         cells.borders = []
         row(0..borders).borders = [:bottom]
       end
